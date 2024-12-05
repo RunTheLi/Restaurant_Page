@@ -16,7 +16,9 @@ export default function loadMenu() {
     const menuItems = [
         { name: "Cheesecake", price: "$5" },
         { name: "Donuts", price: "$2" },
-        { name: "Apple Pie", price: "$4" }
+        { name: "Apple Pie", price: "$4" },
+        { name: "Honey Tea", price: "$5" },
+        { name: "Tirimisu", price: "$8" },
     ];
 
     // Loop through the menu items and create a div for each one

@@ -5,26 +5,43 @@ import loadAbout from "./about.js";
 
 function clearContent() {
     const contentDiv = document.getElementById("content");
-    contentDiv.textContent = ""; // Clear existing content
+    contentDiv.textContent = ""; // Clear existing content inside #content
+}
+
+function hideManageDp() {
+    const manageDp = document.getElementById("manageDp");
+    if (manageDp) {
+        manageDp.style.display = "none"; // Hide manageDp when not in Home tab
+    }
+}
+
+function showManageDp() {
+    const manageDp = document.getElementById("manageDp");
+    if (manageDp) {
+        manageDp.style.display = "flex"; // Show manageDp when in Home tab
+    }
 }
 
 function addEventListeners() {
     document.getElementById("home-tab").addEventListener("click", () => {
         clearContent();
-        loadHome();
+        showManageDp();  // Show manageDp when home tab is clicked
+        loadHome();  // Load home content when home tab is clicked
     });
 
     document.getElementById("menu-tab").addEventListener("click", () => {
         clearContent();
-        loadMenu();
+        hideManageDp();  // Hide manageDp when menu tab is clicked
+        loadMenu();  // Load menu content when menu tab is clicked
     });
 
     document.getElementById("about-tab").addEventListener("click", () => {
         clearContent();
-        loadAbout();
+        hideManageDp();  // Hide manageDp when about tab is clicked
+        loadAbout();  // Load about content when about tab is clicked
     });
 }
 
 // Initial page load
-loadHome();
+loadHome();  // Load the home tab by default
 addEventListeners();

@@ -81,11 +81,16 @@ p {
 /* Flexbox layout for #manageDp */
 #manageDp {
     display: flex;
+    height: 350px;
     justify-content: center;
     gap: 25px;
     align-items: flex-start; /* Aligns the items to the top */
     flex-wrap: wrap;  /* Allows items to wrap in smaller screens */
     margin-top: 20px;
+}
+
+#manageDp.hidden {
+    display: none;
 }
 
 #location, #hour {
@@ -107,6 +112,6 @@ p {
     border-radius: 10px;
     font-size: 18px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
