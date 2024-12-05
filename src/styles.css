@@ -1,5 +1,100 @@
-/* styles.css */
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 720px) {
+    #manageDp {
+        flex-direction: column; /* Stacks the sections vertically */
+        align-items: center;    /* Centers the items horizontally */
+    }
+
+    #about, #location, #hour {
+        width: 90%; /* Take up more space on smaller screens */
+        margin: 10px 0; /* Adds space between sections */
+        height: auto; /* Allows the height to adjust based on content */
+    }
+}
+
+/* Smooth scroll behavior */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
 body {
-    background-color: rebeccapurple;
-  }
-  
+    background-image: url(https://popmenucloud.com/cdn-cgi/image/width=1920,height=1920,format=auto,fit=scale-down/kobzlevh/cb8c6e50-3292-40be-897a-b4a2853d93cb.jpg);
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+    padding-top: 20px;
+    max-width: 500px;
+    text-align: center;
+    color: white;
+    font: small-caps bold 20px/1 sans-serif;
+}
+
+nav {
+    width: auto;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    border: transparent;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font: small-caps bold 20px/1 sans-serif;
+}
+
+p {
+    font: small-caps bold 15px/1 sans-serif;
+}
+
+/* Style for each section inside #manageDp */
+#about, #location, #hour {
+    text-align: center;
+    width: 300px; /* Adjust width for larger screens */
+    height: 350px;
+    margin: 10px;  /* Adds space between sections */
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font: small-caps bold 20px/1 sans-serif;
+}
+
+/* Flexbox layout for #manageDp */
+#manageDp {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: flex-start; /* Aligns the items to the top */
+    flex-wrap: wrap;  /* Allows items to wrap in smaller screens */
+    margin-top: 20px;
+}
+
+#location, #hour {
+    text-align: center;
+    width: 300px; /* Adjust width for larger screens */
+    height: 350px;
+    margin: 10px;  /* Adds space between sections */
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font: small-caps bold 24px/1 sans-serif;
+}

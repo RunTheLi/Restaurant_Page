@@ -1,4 +1,6 @@
 import "./styles.css";
-import { greeting } from "./greeting.js";
 
-console.log(greeting);
+import pageLoad from './pageLoad.js';
+
+pageLoad();
+
