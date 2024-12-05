@@ -1,24 +1,4 @@
-/* Responsive design for smaller screens */
-@media only screen and (max-width: 720px) {
-    #manageDp {
-        flex-direction: column; /* Stacks the sections vertically */
-        align-items: center;    /* Centers the items horizontally */
-    }
-
-    #about, #location, #hour {
-        width: 90%; /* Take up more space on smaller screens */
-        margin: 10px 0; /* Adds space between sections */
-        height: auto; /* Allows the height to adjust based on content */
-    }
-}
-
-/* Smooth scroll behavior */
-@media (prefers-reduced-motion: no-preference) {
-    * {
-        scroll-behavior: smooth;
-    }
-}
-
+/* General Styles */
 body {
     background-image: url(https://popmenucloud.com/cdn-cgi/image/width=1920,height=1920,format=auto,fit=scale-down/kobzlevh/cb8c6e50-3292-40be-897a-b4a2853d93cb.jpg);
     font-family: "Roboto", sans-serif;
@@ -28,12 +8,8 @@ body {
 
 #content {
     width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 70px;
-    padding-top: 20px;
+    margin: 0 auto;
+    padding: 20px 20px 70px;
     max-width: 500px;
     text-align: center;
     color: white;
@@ -41,13 +17,10 @@ body {
 }
 
 nav {
-    width: auto;
-    height: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -58,7 +31,6 @@ button {
     background: transparent;
     color: white;
     border-radius: 20px;
-    font-size: 14px;
     font: small-caps bold 20px/1 sans-serif;
 }
 
@@ -66,26 +38,13 @@ p {
     font: small-caps bold 15px/1 sans-serif;
 }
 
-/* Style for each section inside #manageDp */
-#about, #location, #hour {
-    text-align: center;
-    width: 300px; /* Adjust width for larger screens */
-    height: 350px;
-    margin: 10px;  /* Adds space between sections */
-    background-color: white;
-    padding: 20px;
-    border-radius: 20px;
-    font: small-caps bold 20px/1 sans-serif;
-}
-
-/* Flexbox layout for #manageDp */
+/* Section Styling */
 #manageDp {
     display: flex;
-    height: 350px;
     justify-content: center;
     gap: 25px;
-    align-items: flex-start; /* Aligns the items to the top */
-    flex-wrap: wrap;  /* Allows items to wrap in smaller screens */
+    align-items: flex-start;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
@@ -93,25 +52,72 @@ p {
     display: none;
 }
 
-#location, #hour {
+#about, #location, #hour {
     text-align: center;
-    width: 300px; /* Adjust width for larger screens */
+    width: 300px;
     height: 350px;
-    margin: 10px;  /* Adds space between sections */
+    margin: 10px;
     background-color: white;
     padding: 20px;
     border-radius: 20px;
-    font: small-caps bold 24px/1 sans-serif;
+    font: small-caps bold 20px/1 sans-serif;
 }
 
+/* Menu Item Styling */
 .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
     color: black;
     margin: 15px 0;
-    padding: 10px;
+    padding: 15px;
     background-color: #f1f1f1;
     border-radius: 10px;
     font-size: 18px;
-    display: flex;
-    justify-content: center;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
+.menu-item p {
+    margin: 0;
+    padding: 5px;
+}
+
+.menu-item .description {
+    font-size: 16px;
+    color: #555;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 720px) {
+    #manageDp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about, #location, #hour, .menu-item {
+        width: 90%;
+        margin: 10px 0;
+        height: auto;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item .description {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+/* Smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
