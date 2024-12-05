@@ -98,3 +98,15 @@ p {
     border-radius: 20px;
     font: small-caps bold 24px/1 sans-serif;
 }
+
+.menu-item {
+    color: black;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
