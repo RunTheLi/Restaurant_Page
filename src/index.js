@@ -35,14 +35,14 @@ function addEventListeners() {
     // About tab
     document.getElementById("about-tab").addEventListener("click", () => {
         clearContent();
-        hideManageDp();  // Hide manageDp when about tab is clicked
-        loadAbout();  // Load about content when about tab is clicked
+        hideManageDp();  
+        loadAbout();  
     });
 }
 
 function clearContent() {
     const contentDiv = document.getElementById("content");
-    contentDiv.innerHTML = ''; // Clear existing content inside #content
+    contentDiv.innerHTML = ''; 
 }
 
 // Initial page load
