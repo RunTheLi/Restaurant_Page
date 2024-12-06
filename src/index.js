@@ -21,15 +21,15 @@ function addEventListeners() {
     // Home tab
     document.getElementById("home-tab").addEventListener("click", () => {
         clearContent();
-        showManageDp();  // Show manageDp when home tab is clicked
-        loadHome();  // Load home content when home tab is clicked
+        showManageDp();  
+        loadHome();  
     });
 
     // Menu tab
     document.getElementById("menu-tab").addEventListener("click", () => {
         clearContent();
-        hideManageDp();  // Hide manageDp when menu tab is clicked
-        loadMenu();  // Load menu content when menu tab is clicked
+        hideManageDp();  
+        loadMenu();  
     });
 
     // About tab

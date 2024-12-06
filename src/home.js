@@ -6,7 +6,7 @@ export default function loadHome() {
     welcomeMessage.textContent = "The Pareto Restaurant";
 
     const description = document.createElement("p");
-    description.textContent = "Welcome to the best restaurant in town!";
+    description.textContent = `Welcome to the best restaurant in town!`;
 
     homeContent.appendChild(welcomeMessage);
     homeContent.appendChild(description);
