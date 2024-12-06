@@ -55,7 +55,8 @@ Corrected by ensuring proper usage of classList.add in the Contact page module.
 Responsive Design Issues:
 Addressed by applying CSS media queries to ensure proper layout across devices.
 
----- For More Js, Html ,css files checkout the main branch ----
+//---- For More Js, Html ,css files checkout the main branch ----//
+
 ![1](https://github.com/user-attachments/assets/a79069e3-0c59-46ec-b10c-0b2f42f41150)
 
 
