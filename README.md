@@ -62,6 +62,10 @@ Addressed by applying CSS media queries to ensure proper layout across devices.
 ![1](https://github.com/user-attachments/assets/a79069e3-0c59-46ec-b10c-0b2f42f41150)
 
 
+
+https://github.com/user-attachments/assets/b9f90728-1a20-4a24-8a83-5fc3bef0e140
+
+
 ![2](https://github.com/user-attachments/assets/19cdb8e8-a3cc-41a2-a67c-b5a40f59537b)
 
 
