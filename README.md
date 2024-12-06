@@ -59,5 +59,9 @@ Addressed by applying CSS media queries to ensure proper layout across devices.
 
 // ---- https://runtheli.github.io/Restaurant_Page/ ----//
 
+![1](https://github.com/user-attachments/assets/a782eeeb-d360-43e1-b37d-57734590c2d9)
 
-https://github.com/user-attachments/assets/b9f90728-1a20-4a24-8a83-5fc3bef0e140
+![2](https://github.com/user-attachments/assets/23fe83cc-96ba-48ab-9af7-fe334bab3fcc)
+
+![3](https://github.com/user-attachments/assets/607cc70e-83d0-4902-b16c-469b1a7dc3f2)
+
