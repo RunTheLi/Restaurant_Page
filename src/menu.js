@@ -12,7 +12,6 @@ export default function loadMenu() {
     menuItemsDescription.textContent = "Our specialties: tiramisu, Honey Tea, Cheese Cake.";
     menuContent.appendChild(menuItemsDescription);
 
-    // Dynamically add menu items with names, prices, and descriptions
     const menuItems = [
         { name: "Cheesecake", price: "$7", description: "A rich and creamy dessert with a buttery graham cracker crust." },
         { name: "Donuts", price: "$2", description: "Freshly fried, fluffy, and glazed with a variety of toppings." },
@@ -27,7 +26,7 @@ export default function loadMenu() {
         itemDiv.classList.add("menu-item"); // Style this class in CSS
 
         const itemName = document.createElement("p");
-        itemName.textContent = `${item.name} - ${item.price}`;
+        itemName.textContent = `${item.name} ${item.price}`;
         itemDiv.appendChild(itemName);
 
         // Create description element and apply the description class

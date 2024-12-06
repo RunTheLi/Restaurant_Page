@@ -52,7 +52,7 @@ p {
     display: none;
 }
 
-#about, #location, #hour {
+#about, #location, #hour, .worldframe {
     text-align: center;
     width: 300px;
     height: 350px;
@@ -109,7 +109,7 @@ p {
         align-items: flex-start;
     }
 
-    .menu-item .description {
+    .menu-item .description{
         margin-left: 0;
         margin-top: 5px;
     }
@@ -121,3 +121,14 @@ p {
         scroll-behavior: smooth;
     }
 }
+
+.locate {
+    margin-bottom: 15px; /* Add spacing between each location */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
